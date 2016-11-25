@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.frutaal2020"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.frutaal2020.ServidorMainActivity"
+            android:label="@string/title_activity_servidor_main" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.ConexionUsuarios"
+            android:label="@string/title_activity_conexion_usuarios" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.PrincipalActivity"
+            android:label="@string/title_activity_principal" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.tutorial.smsReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.example.frutaal2020.ListaDeMensajes"
+            android:label="@string/title_activity_lista_de_mensajes" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.AgregarMensajeActivity"
+            android:label="@string/title_activity_agregar_mensaje" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.MostrarUsuariosActivity"
+            android:label="@string/title_activity_mostrar_usuarios" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.AgregarUsuarioActivity"
+            android:label="@string/title_activity_agregar_usuario" >
+        </activity>
+        <activity
+            android:name="com.example.frutaal2020.AgregarUsuario"
+            android:label="@string/title_activity_agregar_usuario" >
+        </activity>
+
+        <receiver android:name="com.example.frutaal2020.receptorSMS" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.frutaal2020.AgregarUsuarioService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="INTENT_DE_CARO" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.frutaal2020.EliminarUsuarioService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="INTENT_BAJA_USUARIOS" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.example.frutaal2020.MostrarMensajesActivity"
+            android:label="@string/title_activity_mostrar_mensajes" >
+        </activity>
+    </application>
+
+</manifest>

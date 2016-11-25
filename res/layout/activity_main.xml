@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloServidorSMS" />
+
+    <Button
+        android:id="@+id/botonVerMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonAddMsg"
+        android:layout_alignRight="@+id/botonAddMsg"
+        android:layout_below="@+id/botonAddMsg"
+        android:layout_marginTop="17dp"
+        android:text="@string/botonVerMsg" />
+
+    <Button
+        android:id="@+id/botonVerUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonVerMsg"
+        android:layout_alignRight="@+id/botonVerMsg"
+        android:layout_below="@+id/botonVerMsg"
+        android:layout_marginTop="24dp"
+        android:text="@string/botonverusuarios" />
+
+    <Button
+        android:id="@+id/botonEnviarMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonVerUsers"
+        android:layout_alignRight="@+id/botonVerUsers"
+        android:layout_below="@+id/botonVerUsers"
+        android:layout_marginTop="20dp"
+        android:text="@string/botonEnviarMsgs" />
+
+    <Button
+        android:id="@+id/botonAddMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensaje"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/botonAddMensaje" />
+
+    <Button
+        android:id="@+id/botonreiniciardb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonEnviarMsg"
+        android:layout_alignRight="@+id/botonEnviarMsg"
+        android:layout_below="@+id/botonEnviarMsg"
+        android:layout_marginTop="22dp"
+        android:text="@string/botonReiniciarBD" />
+
+</RelativeLayout>

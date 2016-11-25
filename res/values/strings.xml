@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FrutaAl2020</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nro_origen">bla</string>
+    <string name="title_activity_servidor_main">ServidorMainActivity</string>
+    <string name="title_activity_conexion_usuarios">ConexionUsuarios</string>
+    <string name="botonserver">Enviar Mensajes</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="title_activity_main">Servidor Fruta al 2020</string>
+    <string name="botonAddMensaje">Agregar Mensaje</string>
+    <string name="nuevomsg">Ingrese el nuevo mensaje</string>
+    <string name="botonVerMsg">Ver Mensajes</string>
+    <string name="title_activity_lista_de_mensajes">ListaDeMensajes</string>
+    <string name="titulomsg">Mensajes</string>
+    <string name="botonverusuarios">Ver Usuarios</string>
+    <string name="title_activity_agregar_mensaje">AgregarMensajeActivity</string>
+    <string name="botonEnviarMsgs">Enviar Mensaje Multiple</string>
+    <string name="tituloServidorSMS">Servidor SMS</string>
+    <string name="tituloAddMensaje">Agregar un nuevo mensaje a la BD</string>
+    <string name="botonReiniciarBD">Reiniciar BD</string>
+    <string name="title_activity_mostrar_usuarios">MostrarUsuariosActivity</string>
+    <string name="title_activity_agregar_usuario">AgregarUsuarioActivity</string>
+    <string name="tituloVerUsuarios">Usuarios registrados en el sistema</string>
+    <string name="title_activity_mostrar_mensajes">MostrarMensajesActivity</string>
+
+</resources>
